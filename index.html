@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Strict - Strictly more</title>
+  </head>
+  <body class="bg-black text-white font-body">
+    <div class="fixed bg-black/30 w-full">
+      <nav class="font-bold pt-8 px-8 sm:ml-24 md:bg-darkgrey">
+        <div class="container">
+          <div class="flex justify-between items-center">
+            <a href="/" class="flex items-center">
+              <img
+                src="/assets/StrictLongNoBGWhite.svg"
+                class="h-12"
+                alt="BEMM Logo"
+              />
+            </a>
+            <div class="hidden text-lg md:flex items-center space-x-1">
+              <!-- Desktop Menu -->
+              <ul class="flex flex-col sm:flex-row sm:items-center">
+                <li class="mt-2 sm:mx-10 sm:mt-0">
+                  <a href="#services">Services</a>
+                </li>
+                <li class="mt-2 sm:mx-10 sm:mt-0">
+                  <a href="#aboutus">About Strict</a>
+                </li>
+                <li class="mt-2 sm:mx-10 sm:mt-0">
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="md:hidden flex items-center">
+              <button class="outline-none mobile-menu-button p-4">
+                <svg
+                  class="h-6 w-6"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="209px"
+                  height="177px"
+                  viewBox="0 0 209 177"
+                  style="overflow: visible; enable-background: new 0 0 209 177"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: none;
+                      stroke: #ffffff;
+                      stroke-width: 20;
+                      stroke-miterlimit: 10;
+                    }
+
+                    .st1 {
+                      fill: none;
+                      stroke: #48ea9c;
+                      stroke-width: 20;
+                      stroke-miterlimit: 10;
+                    }
+                  </style>
+                  <defs></defs>
+                  <line class="st0" x1="0" y1="10" x2="209" y2="10" />
+                  <line class="st0" x1="0" y1="167" x2="209" y2="167" />
+                  <line class="st1" x1="74" y1="88.5" x2="209" y2="88.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="hidden mobile-menu mt-4">
+            <ul class="flex flex-col justify-around m-0 text-center">
+              <li>
+                <a href="brands.html">
+                  <div class="text-xl m-2 py-4">Merken</div>
+                </a>
+              </li>
+              <li>
+                <a href="aboutus.html">
+                  <div class="text-xl m-2 py-4">Over BEMM</div>
+                </a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  <div class="text-xl m-2 py-4">Contact</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+              menu.classList.toggle("hidden");
+              menu.classList.toggle("transform");
+            });
+          </script>
+        </div>
+      </nav>
+    </div>
+
+    <section id="services" class="px-12 sm:px-24 pt-24">
+      <h2 class="text-6xl font-extrabold">SERVICES</h2>
+      <div
+        class="flex flex-col items-center sm:justify-around md:flex-row sm:flex-wrap"
+      >
+        <div
+          class="flex flex-col m-9 p-4 w-full lg:w-1/5 md:w-1/3 border-2 rounded-tl-3xl items-center rounded-br-3xl text-center"
+        >
+          <h3 class="text-4xl font-extrabold mb-4">Graphic Design</h3>
+          <img class="px-8 h-60 mb-4" src="assets/icons/logo-icon-white.svg" />
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            euismod non urna eu sodales. Nullam convallis dignissim facilisis.
+            Duis id neque quis lacus dignissim lacinia vel sit amet nulla.
+          </p>
+        </div>
+        <div
+          class="flex flex-col m-9 p-4 w-full lg:w-1/5 md:w-1/3 border-2 rounded-tl-3xl items-center rounded-br-3xl text-center"
+        >
+          <h3 class="text-4xl font-extrabold mb-4">Websites</h3>
+          <img class="px-8 h-60 mb-4" src="assets/icons/logo-icon-white.svg" />
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            euismod non urna eu sodales. Nullam convallis dignissim facilisis.
+            Duis id neque quis lacus dignissim lacinia vel sit amet nulla.
+          </p>
+        </div>
+        <div
+          class="flex flex-col m-9 p-4 w-full lg:w-1/5 md:w-1/3 border-2 rounded-tl-3xl items-center rounded-br-3xl text-center"
+        >
+          <h3 class="text-4xl font-extrabold mb-4">Apps</h3>
+          <img class="px-8 h-60 mb-4" src="assets/icons/logo-icon-white.svg" />
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            euismod non urna eu sodales. Nullam convallis dignissim facilisis.
+            Duis id neque quis lacus dignissim lacinia vel sit amet nulla.
+          </p>
+        </div>
+        <div
+          class="flex flex-col m-9 p-4 w-full lg:w-1/5 md:w-1/3 border-2 rounded-tl-3xl items-center rounded-br-3xl text-center"
+        >
+          <h3 class="text-4xl font-extrabold mb-4">And strictly more</h3>
+          <img class="px-8 h-60 mb-4" src="assets/icons/logo-icon-white.svg" />
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            euismod non urna eu sodales. Nullam convallis dignissim facilisis.
+            Duis id neque quis lacus dignissim lacinia vel sit amet nulla.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="aboutus" class="pt-12 text-black bg-white">
+      <h2 class="text-6xl font-extrabold px-12 sm:px-24">ABOUT STRICT</h2>
+      <div class="px-6 sm:px-12">
+        <div class="flex flex-col text-center py-12 sm:flex-row">
+          <div class="mb-12 sm:mb-0">
+            <h3 class="text-4xl font-extrabold mb-8">The Goal</h3>
+            <p>
+              The goal is to satisfy customers with their needs. This could be a
+              flyer, logo, shirt design but also a website, application or just
+              help with their solutions. It's all about creating the art for the
+              customers needs.
+            </p>
+          </div>
+          <div class="mb-12 sm:mb-0">
+            <h3 class="text-4xl font-extrabold mb-8">The Name</h3>
+
+            <p>
+              The name 'Strict' comes from Yasin's surname, Yavuz, meaning
+              strict and serious. Most of the things we make are following this
+              meaning. The slogan,
+              <span class="text-orange-700 font-bold">'Strictly more'</span> ,
+              is a paradox. Because how can you have strictly something but also
+              more?
+            </p>
+          </div>
+          <div class="mb-12 sm:mb-0">
+            <h3 class="text-4xl font-extrabold mb-8">The Story</h3>
+
+            <p>
+              Strict was founded by Yasin Yavuz who has had a great passion for
+              everything digital since a young age. Making websites, drawing in
+              msPaint, building the computer itself, ... His hobbies and
+              passions became his job.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
