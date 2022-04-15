@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon//site.webmanifest" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap"
       rel="stylesheet"
@@ -14,8 +30,8 @@
     <title>Strict - Strictly more</title>
   </head>
   <body class="bg-black text-white font-body">
-    <div class="fixed bg-black/30 w-full">
-      <nav class="font-bold pt-8 px-8 sm:ml-24 md:bg-darkgrey">
+    <div class="bg-black w-full">
+      <nav class="font-bold py-8 px-8 sm:ml-24 md:bg-darkgrey">
         <div class="container">
           <div class="flex justify-between items-center">
             <a href="/" class="flex items-center">
@@ -78,21 +94,15 @@
             </div>
           </div>
           <div class="hidden mobile-menu mt-4">
-            <ul class="flex flex-col justify-around m-0 text-center">
-              <li>
-                <a href="brands.html">
-                  <div class="text-xl m-2 py-4">Merken</div>
-                </a>
+            <ul class="flex flex-col justify-around m-0 text-center text-3xl">
+              <li class="py-6">
+                <a href="#services">Services</a>
               </li>
-              <li>
-                <a href="aboutus.html">
-                  <div class="text-xl m-2 py-4">Over BEMM</div>
-                </a>
+              <li class="py-6">
+                <a href="#aboutus">About Strict</a>
               </li>
-              <li>
-                <a href="contact.html">
-                  <div class="text-xl m-2 py-4">Contact</div>
-                </a>
+              <li class="py-6">
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -108,73 +118,75 @@
         </div>
       </nav>
     </div>
+    <section id="intro" class="py-12 xl:py-24 bg-white">
+      <div class="flex flex-col items-center xl:mx-60 xl:flex-row">
+        <div class="w-4/5">
+          <img src="assets/intro_image.svg" alt="" />
+        </div>
+        <div class="bg-green-600 flex flex-col sm:w-full p-4 xl:p-24">
+          <h2 class="text-4xl xl:text-6xl font-bold">
+            All you digital needs, created
+            <span class="text-black">strict</span>ly for you!
+          </h2>
+          <p class="text-2xl mt-4 font-medium">
+            We are a digital company ready to help you with everything from the
+            websites to graphic designs. Let's start thinking digital.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <section id="services" class="px-12 sm:px-24 pt-24">
+    <section id="services" class="px-12 py-6 sm:px-24">
       <h2 class="text-6xl font-extrabold">SERVICES</h2>
       <div
-        class="flex flex-col items-center sm:justify-around md:flex-row sm:flex-wrap"
+        class="flex flex-col items-center sm:justify-around md:flex-row my-6"
       >
         <div
-          class="flex flex-col m-9 p-4 w-full lg:w-1/5 md:w-1/3 border-2 rounded-tl-3xl items-center rounded-br-3xl text-center"
+          class="flex flex-col text-center lg:text-left mx-4 lg:flex-row items-center lg:w-1/4"
         >
-          <h3 class="text-4xl font-extrabold mb-4">Graphic Design</h3>
-          <img class="px-8 h-60 mb-4" src="assets/icons/logo-icon-white.svg" />
-
+          <img class="h-20 p-2" src="assets/icons/logo-icon-white.svg" />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            euismod non urna eu sodales. Nullam convallis dignissim facilisis.
-            Duis id neque quis lacus dignissim lacinia vel sit amet nulla.
+            <span class="text-green-500 font-semibold">Graphic Design.</span>
+            Logos or posters or brand identity or anything. We help you with all
+            of them.
           </p>
         </div>
         <div
-          class="flex flex-col m-9 p-4 w-full lg:w-1/5 md:w-1/3 border-2 rounded-tl-3xl items-center rounded-br-3xl text-center"
+          class="flex flex-col text-center lg:text-left mx-4 lg:flex-row items-center lg:w-1/4"
         >
-          <h3 class="text-4xl font-extrabold mb-4">Websites</h3>
-          <img class="px-8 h-60 mb-4" src="assets/icons/logo-icon-white.svg" />
-
+          <img class="h-20 p-2" src="assets/icons/logo-icon-white.svg" />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            euismod non urna eu sodales. Nullam convallis dignissim facilisis.
-            Duis id neque quis lacus dignissim lacinia vel sit amet nulla.
+            <span class="text-green-500 font-semibold">Websites.</span>
+            The perfect website that fits your style. We can do that .
           </p>
         </div>
         <div
-          class="flex flex-col m-9 p-4 w-full lg:w-1/5 md:w-1/3 border-2 rounded-tl-3xl items-center rounded-br-3xl text-center"
+          class="flex flex-col text-center lg:text-left mx-4 lg:flex-row items-center lg:w-1/4"
         >
-          <h3 class="text-4xl font-extrabold mb-4">Apps</h3>
-          <img class="px-8 h-60 mb-4" src="assets/icons/logo-icon-white.svg" />
-
+          <img class="h-20 p-2" src="assets/icons/logo-icon-white.svg" />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            euismod non urna eu sodales. Nullam convallis dignissim facilisis.
-            Duis id neque quis lacus dignissim lacinia vel sit amet nulla.
-          </p>
-        </div>
-        <div
-          class="flex flex-col m-9 p-4 w-full lg:w-1/5 md:w-1/3 border-2 rounded-tl-3xl items-center rounded-br-3xl text-center"
-        >
-          <h3 class="text-4xl font-extrabold mb-4">And strictly more</h3>
-          <img class="px-8 h-60 mb-4" src="assets/icons/logo-icon-white.svg" />
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            euismod non urna eu sodales. Nullam convallis dignissim facilisis.
-            Duis id neque quis lacus dignissim lacinia vel sit amet nulla.
+            <span class="text-green-500 font-semibold">And more.</span>
+            Looking for a combination or maybe something totally diffrent like
+            an art piece? We'll find a solution.
           </p>
         </div>
       </div>
     </section>
     <section id="aboutus" class="pt-12 text-black bg-white">
-      <h2 class="text-6xl font-extrabold px-12 sm:px-24">ABOUT STRICT</h2>
+      <h2 class="text-6xl font-extrabold px-12 sm:px-24">
+        ABOUT <span class="underline decoration-green-500">STRICT</span>
+      </h2>
       <div class="px-6 sm:px-12">
         <div class="flex flex-col text-center py-12 sm:flex-row">
           <div class="mb-12 sm:mb-0">
             <h3 class="text-4xl font-extrabold mb-8">The Goal</h3>
             <p>
               The goal is to satisfy customers with their needs. This could be a
-              flyer, logo, shirt design but also a website, application or just
-              help with their solutions. It's all about creating the art for the
-              customers needs.
+              <span class="text-green-500 font-semibold"
+                >flyer, logo, shirt design but also a website, application</span
+              >
+              or just help with their solutions. It's all about creating the art
+              for the customers needs.
             </p>
           </div>
           <div class="mb-12 sm:mb-0">
@@ -184,9 +196,9 @@
               The name 'Strict' comes from Yasin's surname, Yavuz, meaning
               strict and serious. Most of the things we make are following this
               meaning. The slogan,
-              <span class="text-orange-700 font-bold">'Strictly more'</span> ,
-              is a paradox. Because how can you have strictly something but also
-              more?
+              <span class="text-green-500 font-semibold">'Strictly more'</span>
+              , is a paradox. Because how can you have strictly something but
+              also more?
             </p>
           </div>
           <div class="mb-12 sm:mb-0">
@@ -194,9 +206,11 @@
 
             <p>
               Strict was founded by Yasin Yavuz who has had a great passion for
-              everything digital since a young age. Making websites, drawing in
-              msPaint, building the computer itself, ... His hobbies and
-              passions became his job.
+              <span class="text-green-500 font-semibold"
+                >everything digital
+              </span>
+              since a young age. Making websites, drawing in msPaint, building
+              the computer itself, ... His hobbies and passions became his job.
             </p>
           </div>
         </div>
